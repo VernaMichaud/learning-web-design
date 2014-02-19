@@ -17,37 +17,46 @@
 <p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one of ten lucky winners.</p>
 
 <form action="http://www.learningwebdesign.com/contest.php" method="post">
-<p>Contest Entry Information</p>
 
+<fieldset>
+<legend>Contest Entry Information</legend>
 <ul>
-<li>Name: <input type="text" name="username"></li>
-<li>Email Address: <input type="email" name="emailaddress"></li>
-<li>State: <input type="text" name="telephone"> </li>
-<li>My shoes are SO old…<br><textarea name="story" rows="4" cols="60" maxlength="300" placeholder="No more than 300 characters long"></textarea></li>
+<li><label for="form-name">Name:</label> <input type="text" name="username" id="form-name"></li>
+<li><label for="form-email">Email Address: </label> <input type="email" name="emailaddress"></li>
+<li><label for="form-tel"> Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+<li><label for="form-story">My shoes are SO old…</label><br>
+<textarea name="story" rows="4" cols="60" maxlength="300" placeholder="No more than 300 characters long"></textarea></li>
 </ul>
+</fieldset>
 
 <h2>Design your custom Forcefields:</h2>
+<fieldset>
 
-<p>Custom Shoe Design</p>
+<legend>Custom Shoe Design</legend>
 
-<p>Color <em>(choose one)</em>:</p>
+<fieldset>
+<legend>Color <em>(choose one)</em>:</legend>
   <ul>
   <li><input type="radio" name="color" value="red">Red</li>
   <li><input type="radio" name="color" value="blue">Blue</li>
   <li><input type="radio" name="color" value="black">Black</li>
   <li><input type="radio" name="color" value="silver">Silver</li>
   </ul>
+</fieldset>
 
-<p>Features <em>(Choose as many as you want)</em></p>
+<fieldset>
+<legend>Features <em>(Choose as many as you want)</em></legend>
   <ul>
-  <li><input type="checkbox" name="features" value="sparkley laces">Sparkley laces</li>
-  <li><input type="checkbox" name="features" value="metallic logo">Metallic logo</li>
-  <li><input type="checkbox" name="features" value="light up">Light-up heels</li>
-  <li><input type="checkbox" name="features" value="mp3-enabled">MP3-enabled</li>
+  <li><input type="checkbox" name="feature" value="laces">Sparkley laces</li>
+  <li><input type="checkbox" name="feature" value="logo">Metallic logo</li>
+  <li><input type="checkbox" name="feature" value="heels">Light-up heels</li>
+  <li><input type="checkbox" name="feature" value="mp3">MP3-enabled</li>
   </ul>
+</fieldset>
 
-<p>Size</p>
-<p>Sizes reflect standard men's sizes:</p>
+<fieldset>
+<legend>Size</legend>
+<p><label for="form-size">Sizes reflect standard men's sizes:</label>
 <select name="size" size="1">
 <option>5</option>
 <option>6</option>
@@ -59,7 +68,13 @@
 <option>12</option>
 <option>13</option>
 </select>
+</p>
+</fieldset>
+
+</fieldset>
+
 <p><input type="submit" value="Pimp my shoes!"><input type="reset"></p>
+
 </form>
 </body>
 </html>
